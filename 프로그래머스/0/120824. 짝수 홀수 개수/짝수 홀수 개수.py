@@ -1,4 +1,5 @@
 def solution(num_list):
-    i = sum([1 for num in num_list if num % 2==0])
-    j = sum([1 for num in num_list if num % 2])  
-    return [i, j]
+    answer = [0,0]
+    for n in num_list:
+        answer[n%2]+=1
+    return answer
