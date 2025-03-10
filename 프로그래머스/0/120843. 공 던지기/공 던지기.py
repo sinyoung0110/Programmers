@@ -1,3 +1,2 @@
 def solution(numbers, k):
-    return (k*2-1)%len(numbers) if (k*2-1)%len(numbers)!=0 else len(numbers)
-    
+    return numbers[2 * (k - 1) % len(numbers)]
